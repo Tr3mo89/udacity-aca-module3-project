@@ -1,0 +1,6 @@
+Security issue 1:
+Accessing the S3 bucket "free recipes" via internet from the Web Server instances, instead of using a VPC Endpoint.
+
+
+Security issue 2:
+No WAF or Shield is used to protect the ALB and the underlying instances. Also no ASG to protect against DDoS attacks. Also no encryption in transit, "only" HTTP instead of HTTPS.
